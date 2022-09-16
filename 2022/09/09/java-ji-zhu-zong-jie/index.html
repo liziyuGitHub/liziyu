@@ -484,6 +484,14 @@
 <li><code>getType()</code>：返回字段类型，也是一个<code>Class</code>实例，例如，<code>String.class</code>；</li>
 <li><code>getModifiers()</code>：返回字段的修饰符，它是一个<code>int</code>，不同的bit表示不同的含义。</li>
 </ul>
+<h2 id="JSONField-和-JsonProperty-区别"><a href="#JSONField-和-JsonProperty-区别" class="headerlink" title="@JSONField 和 @JsonProperty 区别"></a>@JSONField 和 @JsonProperty 区别</h2><ul>
+<li><p>目的：都是为了解决json字符串的某些属性名和<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=JavaBean&spm=1001.2101.3001.7020">JavaBean</a>中的属性名匹配不上的问题。</p>
+</li>
+<li><p>区别：接收请求时json转<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=%E5%AE%9E%E4%BD%93%E7%B1%BB&spm=1001.2101.3001.7020">实体类</a>用的@JsonProperty，返回响应时实体类转json返回时用@JSONField</p>
+</li>
+</ul>
+<p>备注：在Springboot中默认的JSON解析框架是jackson，引入alibaba的<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=fastjson&spm=1001.2101.3001.7020">fastjson</a>，使用</p>
+<p>@JSONField去指定参数格式，会失效。</p>
 
                 
             </div>
