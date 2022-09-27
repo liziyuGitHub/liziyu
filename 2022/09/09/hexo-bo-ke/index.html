@@ -442,7 +442,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
+                <h2 id="博客书写"><a href="#博客书写" class="headerlink" title="博客书写"></a>博客书写</h2><p>在_post 文件夹下，新建&amp;&amp;.md 文件<br>基本配置如下：<br>title： 文章标题<br>top： 是否把文章置顶<br>img： 是否给文章定义特色图片，如果不设置，默认从featureimages里面抽取<br>summary： 是否给文章加上摘要，不设置，默认截取文章开头一部分<br>categories： 给文章分类<br>tags： 给文章加标签，可加多个<br>剩下博客书写同csdn一样，可以直接复制过去</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">hexo的个性化配置</span></span><br><span class="line"><span class="attr">date:</span> </span><br><span class="line"><span class="attr">author:</span> <span class="string">wyy</span></span><br><span class="line"><span class="attr">img:</span> </span><br><span class="line"><span class="attr">top:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">cover:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">coverImg:</span> </span><br><span class="line"><span class="attr">password:</span> </span><br><span class="line"><span class="attr">toc:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">mathjax:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">summary:</span> <span class="string">hexo的matery主题的个性化配置</span></span><br><span class="line"><span class="attr">categories:</span> <span class="string">hexo</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">hexo</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><ul>
 <li>简单漂亮，文章内容美观易读</li>
 <li><a target="_blank" rel="noopener" href="https://material.io/">Material Design</a> 设计</li>
 <li>响应式设计，博客在桌面端、平板、手机等设备上均能很好的展现</li>
@@ -1331,7 +1334,7 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            hexo的matery主题的个性化配置
                         
                     </div>
                     <div class="publish-info">
@@ -1340,11 +1343,23 @@
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            子羽
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/hexo/" class="post-category">
+                                    hexo
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
                 </div>
                 
             </div>
