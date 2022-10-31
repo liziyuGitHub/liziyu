@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>MySQL数据库</title>
+      <link href="/2022/10/26/mysql-shu-ju-ku/"/>
+      <url>/2022/10/26/mysql-shu-ju-ku/</url>
+      
+        <content type="html"><![CDATA[<h2 id="内存结构"><a href="#内存结构" class="headerlink" title="内存结构"></a>内存结构</h2><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026163848269.png" alt="image-20221026163848269"></p><h2 id="SQL编码规范"><a href="#SQL编码规范" class="headerlink" title="SQL编码规范"></a>SQL编码规范</h2><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026164951862.png" alt="image-20221026164951862"></p><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026165045561.png" alt="image-20221026165045561"></p><ul><li><p>案列：</p><p>​       服务端查询语句注意，表数据巨大时候，不要全表查。</p></li></ul><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026165329031.png" alt="image-20221026165329031"></p><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026165559684.png" alt="image-20221026165559684"></p><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026171009612.png" alt="image-20221026171009612"></p><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026171225617.png" alt="image-20221026171225617"></p><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026171557823.png" alt="image-20221026171557823"></p><p>##数据库锁 在InnoDB引擎下</p><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026173610347.png" alt="image-20221026173610347"></p><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026173626836.png" alt="image-20221026173626836"></p><ul><li><em><strong>MySQL的行级锁基于索引实现的，如果索引失效，则自动上升为表级锁。</strong></em></li></ul><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026174046308.png" alt="image-20221026174046308"></p><ul><li><em>RC读已提交</em></li><li><em>参数innodb_locks_unsafe_for_binlog为ON</em>，减少死锁触发。</li></ul><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026175246196.png" alt="image-20221026175246196"></p><p>##死锁处理</p><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026175727541.png" alt="image-20221026175727541"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>欢乐时光</title>
       <link href="/2022/09/27/huan-le-shi-guang/"/>
       <url>/2022/09/27/huan-le-shi-guang/</url>

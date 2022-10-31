@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="欢乐时光, 紫色的羽毛">
+    <meta name="keywords" content="MySQL数据库, 紫色的羽毛">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>欢乐时光 | 紫色的羽毛</title>
+    <title>MySQL数据库 | 紫色的羽毛</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -288,12 +288,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">欢乐时光</h1>
+                    <h1 class="description center-align post-title">MySQL数据库</h1>
                 </div>
             </div>
         </div>
@@ -409,8 +409,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%96%87%E5%AD%A6/">
-                                <span class="chip bg-color">文学</span>
+                            <a href="/tags/MySQL/">
+                                <span class="chip bg-color">MySQL</span>
                             </a>
                         
                     </div>
@@ -421,8 +421,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E9%87%91%E5%8F%A5%E6%91%98%E6%8A%84/" class="post-category">
-                                金句摘抄
+                            <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" class="post-category">
+                                技术笔记
                             </a>
                         
                     </div>
@@ -434,7 +434,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-09-27
+                    2022-10-26
                 </div>
                 
 
@@ -455,7 +455,33 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="2022-00-00"><a href="#2022-00-00" class="headerlink" title="2022-00-00"></a>2022-00-00</h2><p>慧极必伤，情深不寿。</p>
+                <h2 id="内存结构"><a href="#内存结构" class="headerlink" title="内存结构"></a>内存结构</h2><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026163848269.png" alt="image-20221026163848269"></p>
+<h2 id="SQL编码规范"><a href="#SQL编码规范" class="headerlink" title="SQL编码规范"></a>SQL编码规范</h2><p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026164951862.png" alt="image-20221026164951862"></p>
+<p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026165045561.png" alt="image-20221026165045561"></p>
+<ul>
+<li><p>案列：</p>
+<p>​       服务端查询语句注意，表数据巨大时候，不要全表查。</p>
+</li>
+</ul>
+<p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026165329031.png" alt="image-20221026165329031"></p>
+<p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026165559684.png" alt="image-20221026165559684"></p>
+<p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026171009612.png" alt="image-20221026171009612"></p>
+<p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026171225617.png" alt="image-20221026171225617"></p>
+<p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026171557823.png" alt="image-20221026171557823"></p>
+<p>##数据库锁 在InnoDB引擎下</p>
+<p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026173610347.png" alt="image-20221026173610347"></p>
+<p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026173626836.png" alt="image-20221026173626836"></p>
+<ul>
+<li><em><strong>MySQL的行级锁基于索引实现的，如果索引失效，则自动上升为表级锁。</strong></em></li>
+</ul>
+<p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026174046308.png" alt="image-20221026174046308"></p>
+<ul>
+<li><em>RC读已提交</em></li>
+<li><em>参数innodb_locks_unsafe_for_binlog为ON</em>，减少死锁触发。</li>
+</ul>
+<p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026175246196.png" alt="image-20221026175246196"></p>
+<p>##死锁处理</p>
+<p><img src="D:\Blog\source_posts\MySQL数据库.assets\image-20221026175727541.png" alt="image-20221026175727541"></p>
 
                 
             </div>
@@ -482,7 +508,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ziyuhuahua.github.io/2022/09/27/huan-le-shi-guang/">https://ziyuhuahua.github.io/2022/09/27/huan-le-shi-guang/</a>
+                    <a href="https://ziyuhuahua.github.io/2022/10/26/mysql-shu-ju-ku/">https://ziyuhuahua.github.io/2022/10/26/mysql-shu-ju-ku/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -520,8 +546,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%96%87%E5%AD%A6/">
-                                    <span class="chip bg-color">文学</span>
+                                <a href="/tags/MySQL/">
+                                    <span class="chip bg-color">MySQL</span>
                                 </a>
                             
                         </div>
@@ -954,9 +980,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/10/26/mysql-shu-ju-ku/">
                     <div class="card-image">
@@ -974,9 +1001,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-10-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-10-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -989,6 +1016,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1007,19 +1035,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/09/27/redis/">
+                <a href="/2022/09/27/huan-le-shi-guang/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="redis">
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="欢乐时光">
                         
-                        <span class="card-title">redis</span>
+                        <span class="card-title">欢乐时光</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            redis相关
+                            纸短情长
                         
                     </div>
                     <div class="publish-info">
@@ -1030,8 +1058,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    技术笔记
+                            <a href="/categories/%E9%87%91%E5%8F%A5%E6%91%98%E6%8A%84/" class="post-category">
+                                    金句摘抄
                                 </a>
                             
                             
@@ -1041,8 +1069,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JAVA/">
-                        <span class="chip bg-color">JAVA</span>
+                    <a href="/tags/%E6%96%87%E5%AD%A6/">
+                        <span class="chip bg-color">文学</span>
                     </a>
                     
                 </div>
