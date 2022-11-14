@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="redis, 紫色的羽毛">
+    <meta name="keywords" content="示例代码, 紫色的羽毛">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>redis | 紫色的羽毛</title>
+    <title>示例代码 | 紫色的羽毛</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -288,12 +288,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">redis</h1>
+                    <h1 class="description center-align post-title">示例代码</h1>
                 </div>
             </div>
         </div>
@@ -409,8 +409,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/JAVA/">
-                                <span class="chip bg-color">JAVA</span>
+                            <a href="/tags/%E6%96%87%E5%AD%A6/">
+                                <span class="chip bg-color">文学</span>
                             </a>
                         
                     </div>
@@ -421,8 +421,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" class="post-category">
-                                技术笔记
+                            <a href="/categories/%E9%87%91%E5%8F%A5%E6%91%98%E6%8A%84/" class="post-category">
+                                金句摘抄
                             </a>
                         
                     </div>
@@ -455,7 +455,8 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <h2 id="2022-00-00-发送远程请求"><a href="#2022-00-00-发送远程请求" class="headerlink" title="2022-00-00      发送远程请求"></a>2022-00-00      发送远程请求</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"> <span class="keyword">public</span> <span class="keyword">static</span> String <span class="title function_">sendPost</span><span class="params">(String url, String param)</span> &#123;</span><br><span class="line">        <span class="type">PrintWriter</span> <span class="variable">out</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">        <span class="type">BufferedReader</span> <span class="variable">in</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">        <span class="type">StringBuilder</span> <span class="variable">result</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringBuilder</span>();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="type">String</span> <span class="variable">urlNameString</span> <span class="operator">=</span> url;</span><br><span class="line"><span class="comment">//            log.info(&quot;sendPost - &#123;&#125;&quot;, urlNameString);</span></span><br><span class="line">            <span class="comment">// 创建URL对象</span></span><br><span class="line">            <span class="type">URL</span> <span class="variable">realUrl</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">URL</span>(urlNameString);</span><br><span class="line">            <span class="comment">// 打开URL连接</span></span><br><span class="line">            <span class="type">URLConnection</span> <span class="variable">conn</span> <span class="operator">=</span> realUrl.openConnection();</span><br><span class="line">            <span class="comment">// 设置通用属性</span></span><br><span class="line">            conn.setRequestProperty(<span class="string">&quot;accept&quot;</span>, <span class="string">&quot;application/json, text/plain, */*&quot;</span>);</span><br><span class="line">            conn.setRequestProperty(<span class="string">&quot;connection&quot;</span>, <span class="string">&quot;Keep-Alive&quot;</span>);</span><br><span class="line">            conn.setRequestProperty(<span class="string">&quot;user-agent&quot;</span>, <span class="string">&quot;Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1;SV1)&quot;</span>);</span><br><span class="line">            conn.setRequestProperty(<span class="string">&quot;Accept-Charset&quot;</span>, <span class="string">&quot;utf-8&quot;</span>);</span><br><span class="line">            conn.setRequestProperty(<span class="string">&quot;Content-type&quot;</span>, <span class="string">&quot;application/json&quot;</span>);</span><br><span class="line">            <span class="comment">// 设置POST方法</span></span><br><span class="line">            conn.setDoOutput(<span class="literal">true</span>);</span><br><span class="line">            conn.setDoInput(<span class="literal">true</span>);</span><br><span class="line">            <span class="comment">// 获取URLConnetion对象对应的输出流</span></span><br><span class="line">            out = <span class="keyword">new</span> <span class="title class_">PrintWriter</span>(conn.getOutputStream());</span><br><span class="line">            out.print(param);</span><br><span class="line">            <span class="comment">// flush输出流的缓冲</span></span><br><span class="line">            out.flush();</span><br><span class="line">            <span class="comment">// 定义BufferedReader输入流来读取URL的响应，设置编码方式</span></span><br><span class="line">            in = <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(<span class="keyword">new</span> <span class="title class_">InputStreamReader</span>(conn.getInputStream(), <span class="string">&quot;utf-8&quot;</span>));</span><br><span class="line">            String line;</span><br><span class="line">            <span class="comment">// 读取返回的内容</span></span><br><span class="line">            <span class="keyword">while</span> ((line = in.readLine()) != <span class="literal">null</span>) &#123;</span><br><span class="line">                result.append(line);</span><br><span class="line">            &#125;</span><br><span class="line"><span class="comment">//            log.info(&quot;data - &#123;&#125;&quot;, param);</span></span><br><span class="line"><span class="comment">//            log.info(&quot;recv - &#123;&#125;&quot;, result);</span></span><br><span class="line">        &#125; <span class="keyword">catch</span> (ConnectException e) &#123;</span><br><span class="line">            log.error(<span class="string">&quot;调用HttpUtils.sendPost ConnectException, url=&quot;</span> + url + <span class="string">&quot;,param=&quot;</span> + param, e);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (SocketTimeoutException e) &#123;</span><br><span class="line">            log.error(<span class="string">&quot;调用HttpUtils.sendPost SocketTimeoutException, url=&quot;</span> + url + <span class="string">&quot;,param=&quot;</span> + param, e);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            log.error(<span class="string">&quot;调用HttpUtils.sendPost IOException, url=&quot;</span> + url + <span class="string">&quot;,param=&quot;</span> + param, e);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            log.error(<span class="string">&quot;调用HttpsUtil.sendPost Exception, url=&quot;</span> + url + <span class="string">&quot;,param=&quot;</span> + param, e);</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (out != <span class="literal">null</span>) &#123;</span><br><span class="line">                    out.close();</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (in != <span class="literal">null</span>) &#123;</span><br><span class="line">                    in.close();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">catch</span> (IOException ex) &#123;</span><br><span class="line">                log.error(<span class="string">&quot;调用in.close Exception, url=&quot;</span> + url + <span class="string">&quot;,param=&quot;</span> + param, ex);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result.toString();</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
                 
             </div>
             <hr/>
@@ -481,7 +482,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ziyuhuahua.github.io/2022/09/27/redis/">https://ziyuhuahua.github.io/2022/09/27/redis/</a>
+                    <a href="https://ziyuhuahua.github.io/2022/09/27/dai-ma-shi-li/">https://ziyuhuahua.github.io/2022/09/27/dai-ma-shi-li/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -519,8 +520,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/JAVA/">
-                                    <span class="chip bg-color">JAVA</span>
+                                <a href="/tags/%E6%96%87%E5%AD%A6/">
+                                    <span class="chip bg-color">文学</span>
                                 </a>
                             
                         </div>
@@ -957,7 +958,7 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/09/27/dai-ma-shi-li/">
+                <a href="/2022/09/27/huan-le-shi-guang/">
                     <div class="card-image">
                         
                         
@@ -1006,24 +1007,24 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/09/09/hexo-bo-ke/">
+                <a href="/2022/09/27/redis/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Hexo博客">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="redis">
                         
-                        <span class="card-title">Hexo博客</span>
+                        <span class="card-title">redis</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            个人博客相关
+                            redis相关
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-27
                             </span>
                         <span class="publish-author">
                             
@@ -1040,8 +1041,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/JAVA/">
+                        <span class="chip bg-color">JAVA</span>
                     </a>
                     
                 </div>
